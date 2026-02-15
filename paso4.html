@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Descarga</title></head>
+<body style="font-family:Arial;text-align:center;padding-top:60px;">
+
+<h2>Último paso</h2>
+<p>Espera 10 segundos para descargar</p>
+<p id="msg">⏳ Esperando...</p>
+
+<button id="btn" style="display:none;font-size:18px;"
+onclick="window.location.href='https://www.mediafire.com/file/ejapqmpn9foa5nq/%25F0%259F%2593%2582PANEL_XANDERDYT_V12.0%25F0%259F%2259C%2585.7z/file'">
+Ir a MediaFire
+</button>
+
+<script>
+setTimeout(function(){
+ document.getElementById("btn").style.display="inline-block";
+ document.getElementById("msg").innerText="Descarga habilitada";
+},10000);
+</script>
+
+</body>
+</html>
