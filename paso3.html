@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Paso 3</title></head>
+<body style="font-family:Arial;text-align:center;padding-top:60px;">
+
+<h2>Paso 3</h2>
+<p>Espera 15 segundos</p>
+<p id="msg">⏳ Esperando...</p>
+
+<button id="btn" style="display:none;" onclick="location.href='paso4.html'">
+Continuar
+</button>
+
+<script>
+setTimeout(function(){
+ document.getElementById("btn").style.display="inline-block";
+ document.getElementById("msg").innerText="Ya puedes continuar";
+},15000);
+</script>
+
+</body>
+</html>
